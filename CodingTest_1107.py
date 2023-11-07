@@ -24,3 +24,12 @@ def solution(sides):
     else:
         return 2
 #------------------------------------------------------------
+# 배열의 유사도 
+# https://school.programmers.co.kr/learn/courses/30/lessons/120903
+def solution(s1, s2):
+    count = 0
+    for item in s1:
+        if item in s2:
+            count += 1
+    return count
+#------------------------------------------------------------
