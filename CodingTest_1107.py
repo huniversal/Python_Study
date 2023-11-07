@@ -33,3 +33,10 @@ def solution(s1, s2):
             count += 1
     return count
 #------------------------------------------------------------
+# 자릿수 더하기 
+# https://school.programmers.co.kr/learn/courses/30/lessons/120906
+def solution(n):
+    change = str(n)
+    list_a = [int(i) for i in change]
+    change_sum = sum(list_a)
+    return change_sum
