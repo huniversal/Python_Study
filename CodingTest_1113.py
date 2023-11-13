@@ -48,10 +48,19 @@
 #     return answer
 #------------------------------------------------------------
 # 짝수는 싫어요 
-def solution(n):
-    answer = []
-    for i in range(n+1):
-        if i % 2 != 0:
-            answer.append(i)
+# def solution(n):
+#     answer = []
+#     for i in range(n+1):
+#         if i % 2 != 0:
+#             answer.append(i)
+#     return answer
+#------------------------------------------------------------
+# 숨어있는 숫자의 덧셈
+def solution(my_string):
+    answer = 0
+    new_string = sorted(my_string.lower())
+    for i in new_string:
+        if ord(i) < 90:
+            answer += int(i)
     return answer
 #------------------------------------------------------------
