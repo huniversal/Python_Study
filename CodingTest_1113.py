@@ -23,3 +23,11 @@ def solution(my_string):
     if i not in  answer:
       answer += i
   return answer
+#------------------------------------------------------------
+# 제곱수 판별하기
+def solution(n):
+    for i in range(n):
+        if i**2 == n:
+            return 1
+    return 2
+#------------------------------------------------------------
