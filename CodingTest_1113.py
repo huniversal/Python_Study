@@ -32,10 +32,26 @@
 #     return 2
 #------------------------------------------------------------
 # 문자 반복 출력하기 
-def solution(my_string, n):
-    answer = ''
-    for i in my_string:
-        answer += i*n
+# def solution(my_string, n):
+#     answer = ''
+#     for i in my_string:
+#         answer += i*n
+#     return answer
+#------------------------------------------------------------
+# 모음 제거 
+# def solution(my_string):
+#     answer = ''
+#     list_a = ["a", "e", "i", "o", "u"]
+#     for i in my_string:
+#         if i not in list_a:
+#             answer += i
+#     return answer
+#------------------------------------------------------------
+# 짝수는 싫어요 
+def solution(n):
+    answer = []
+    for i in range(n+1):
+        if i % 2 != 0:
+            answer.append(i)
     return answer
 #------------------------------------------------------------
-
