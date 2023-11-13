@@ -1,4 +1,4 @@
-# # 옷가게 할인 받기
+# 옷가게 할인 받기
 def solution(price):
     if price >= 100000 and price < 300000:
         return int(price * 0.95)
@@ -8,7 +8,7 @@ def solution(price):
         return int(price * 0.8)
     else:
         return int(price)
-# #------------------------------------------------------------
+#------------------------------------------------------------
 # 외계행성의 나이
 def solution(age):
     answer = ''
@@ -16,5 +16,10 @@ def solution(age):
         answer += chr(int(i) + 97)
     return answer
 #------------------------------------------------------------
-
-
+# 중복된 문자 제거 
+def solution(my_string):
+  answer = ''
+  for i in my_string:
+    if i not in  answer:
+      answer += i
+  return answer
