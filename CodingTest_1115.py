@@ -17,10 +17,11 @@
 #             answer += i.upper()
 #     return answer
 #------------------------------------------------------------
-def solution(cipher, code):
-    answer = ''
-    for i in range(1, len(cipher)+1):
-        if i % code == 0:
-            answer += str(cipher[i-1])
-    return answer
+# def solution(cipher, code):
+#     answer = ''
+#     for i in range(1, len(cipher)+1):
+#         if i % code == 0:
+#             answer += str(cipher[i-1])
+#     return answer
 #------------------------------------------------------------
+# 개미군단
