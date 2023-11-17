@@ -20,21 +20,19 @@
 #   total = sum(ant_count)
 #   return total
 #------------------------------------------------------------
-# 백준 문제
-# https://www.acmicpc.net/problem/2839
-def solution(n):
-  count = 0
-  # while n >= 0:
-  #   a = n // 5 + (n % 5 // 3) + ((n % 5) % 3)
-  while n >= 0:
-    if n % 5 == 0:
-      count += (n // 5)
-      return count
-    n -= 3
-    count += 1
-  else:
-    return (-1)
-print(solution(4))
-#------------------------------------------------------------
+# 백준 문제 
+# https://www.acmicpc.net/problem/2839 
+def solution(n): 
+  count = 0 
+  while n >= 0: 
+    if n % 5 == 0: 
+      count += (n // 5)  
+      return count 
+    n -= 3 
+    count += 1 
+  else: 
+    return (-1) 
+print(solution(4)) 
+#------------------------------------------------------------ 
 
 
